@@ -42,3 +42,5 @@ def hello_and_goodbye(person1, person2):
 
 
 main()
+
+print("I was kinda surprised")

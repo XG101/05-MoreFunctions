@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,30 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+import math
+
+def add(x, y):
+    sum = x + y
+    return sum
+
+def subtract(x, y):
+    difference = x - y
+    return difference
+
+def multiply(x, y):
+    product = x * y
+    return product
+    
+def divide(x, y):
+    quotient = x / y
+    return quotient
+
+def exponential(x, y):
+    expo = math.pow(x, y)
+    return expo
 
 ###############################################################################
-# TODO: 2. (8 pts)
+# DONE: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -60,8 +81,21 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def main():
+    print("Hello user welcome to the 4 way calculator, to continue please insert two numbers")
+    number1 = float(input("Enter Number 1: "))
+    number2 = float(input("Enter Number 2: "))
+    print("Add", add(number1, number2))
+    print("Subtract", subtract(number1, number2))
+    print("Multiply", multiply(number1, number2))
+    print("Divide", divide(number1, number2))
+    print("Exponential", exponential(number1, number2))
+
+    print("Thank you user for using this program")
+
+main()
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# DONE: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this

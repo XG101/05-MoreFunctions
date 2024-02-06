@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   Arbitrary arguments may not be something that you end up using all that
 #   often and we may not use them often in this class, but I wanted to make
@@ -19,8 +19,13 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def rollcall(*kids):
+    print(f"The youngest child is {kids}")
+
+rollcall("Anakin", "Vader", "Luke")
+
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE: 2. (3 pts)
 #
 #   This time, let's create a function that uses arbitrary keyword arguments.
 #
@@ -36,3 +41,8 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+def pet_bio2(**pet):
+  print(f"This " + pet["species"], "is named " + pet["name"], "and he is about " + pet["age"], "born in " + pet["birth"])
+
+pet_bio2(species = "dog", name = "Rex", age = "7 months", birth = "February")
